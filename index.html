@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  <title>Movie App</title>
+</head>
+
+<body>
+
+  <div class="loaded">
+    <div class="item">
+      <dotlottie-player src="https://lottie.host/7c06baef-f3db-4b4b-a157-fee36b56c19a/y9Df45ekof.json"
+        background="transparent" speed="1" style="width: 100%; height: 600px" direction="1" playMode="bounce" loop
+        autoplay></dotlottie-player>
+    </div>
+  </div>
+
+
+  <div class="overlay"></div>
+
+  <div class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Movie <span>DB</span></a>
+      <form action="">
+        <input type="text" placeholder="Search" id="search">
+      </form>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2 class="info-data">Popular Movie's</h2>
+    <div class="container"></div>
+  </div>
+
+  <div class="buttons">
+    <button class="active" data-indx="1">1</button>
+    <button data-indx="2">2</button>
+    <button data-indx="3">3</button>
+    <button data-indx="4">4</button>
+    <button data-indx="5">5</button>
+    <button data-indx="6">6</button>
+  </div>
+
+
+  <audio src="ost.mp3" preload="auto" id="myAudio"></audio>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
